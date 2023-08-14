@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll('nav a').forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#hobbies">My Hobbies</a></li>
+        <li><a href="#why">Why Coding</a></li>
+        <li><a href="https://github.com/Dboobarjr" target=_blank;>Github</a></li>
+        <li><a href="mailto:dboobarjr@icloud.com">Contact Me</a></li>
+    </ul>
+</nav>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1 style="font-size: 50px;">Daniel Boobar</h1>
+            <p>22 years old</p>
+            <br>
+            <p>He/Him</p>
+    </div>
+<main>
+    <div id="main">
+        <div id="left1">
+            <article class="main-articles">
+                <h1 id="about">About Me</h1>
+                <strong><small>A little bit about me! </small></strong>
+                <img id="profile-image" src="images/IMG_7252.JPG">
+                
+                    <p id="text1">My name is Daniel Boobar i'm 22 years old and currently live in Austin, TX!
+I grew up in Houston,TX for the first 19 years of my life before finally 
+deciding to move out and start my own life. I've worked in food service
+since I could work but now I'm transitioning into tech!
+                    </p>
+               
+             </article>
+        </div>
+
+        <div id="right1">
+            <article class="main-articles">
+                <h1 id="hobbies">My Hobbies</h1>
+                <strong><small>What I like to do in my free time!</small></strong>
+              
+                <p>
+I like to fill my time with a few different hobbies. I enjoy everything
+from working out to playing D&D with my friends. I'm also a massive
+nature lover! I love to go camping and hiking, nothing is better than
+waking up to the morning sun after sleeping under the stars all night! 
+                </p>
+                
+            </article>
+        </div>
+        <div id="right2">
+            <article class="main-articles">
+                <h1 id="why">Why?</h1>
+                <strong><small>Why go into tech? </small></strong>
+            
+                <p>
+I've played video games since I was young and I feel like almost anyone
+who has played games has atleast at one point in their lives wanted to
+pick up coding. I've always had a small interest in coding but it 
+wasn't until I started studying philsophy that the idea of coding 
+became more appealing. The overlap in how you structure your mind
+and problem solving are very similar. I think learning to code will 
+be a valuable asset in developing myself in many aspects of my life!
+                </p>
+             
+            </article>
+        </div>
+        <!--article class="side-articles">
+            <h1 id="contact">Contact Me</h1>
+            <strong><small>Please reachout with any questions!</small></strong>
+            <form action="mailto:Dboobarjr@icloud.com" method="post">
+                <label for="name"><strong>Name</strong></label>
+                <br>
+                <input type="text" id="name" placeholder="Your name"></label>
+                <br>
+                <label for="body"><strong>Your Message</strong></label>
+                <br>
+                <textarea id="body" placeholder="Your message" rows="5"></textarea>
+                <br>
+                <button id="submit" aria-placeholder="submit"></button>
+            </form>
+        </article-->
+    </div>
+</main>
+</body>
+</html>
